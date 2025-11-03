@@ -1,0 +1,327 @@
+<!-- Consultation Booking Modal -->
+<div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="consultationModalLabel">
+                    <i class="fas fa-calendar-check text-gold me-2"></i>
+                    Book a Free Consultation
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="consultationForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="consultName" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="consultName" name="name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="consultEmail" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="consultEmail" name="email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="consultPhone" class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" id="consultPhone" name="phone" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="consultDate" class="form-label">Preferred Date *</label>
+                            <input type="date" class="form-control" id="consultDate" name="date" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="consultTime" class="form-label">Preferred Time *</label>
+                            <input type="time" class="form-control" id="consultTime" name="time" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="consultArea" class="form-label">Practice Area *</label>
+                            <select class="form-control" id="consultArea" name="practice_area" required>
+                                <option value="">Select Practice Area</option>
+                                <option value="corporate">Corporate Law</option>
+                                <option value="family">Family Law</option>
+                                <option value="criminal">Criminal Defense</option>
+                                <option value="property">Property Law</option>
+                                <option value="tax">Tax Law</option>
+                                <option value="employment">Employment Law</option>
+                                <option value="intellectual">Intellectual Property</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="consultMessage" class="form-label">Brief Description of Your Case</label>
+                            <textarea class="form-control" id="consultMessage" name="message" rows="4" 
+                                      placeholder="Please describe your legal issue briefly..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="consultAgree" required>
+                        <label class="form-check-label" for="consultAgree">
+                            I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> 
+                            and consent to be contacted regarding my consultation request.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Consultation Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Attorney Details Modal -->
+<div class="modal fade" id="attorneyModal" tabindex="-1" aria-labelledby="attorneyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="attorneyModalLabel">Contact Attorney</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-4 text-center mb-3">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300" 
+                             alt="Attorney" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <h5 id="modalAttorneyName">Attorney Name</h5>
+                        <p class="text-gold" id="modalAttorneyTitle">Senior Partner</p>
+                    </div>
+                    <div class="col-md-8">
+                        <form id="attorneyContactForm">
+                            <div class="mb-3">
+                                <label for="attorneyContactName" class="form-label">Your Name *</label>
+                                <input type="text" class="form-control" id="attorneyContactName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="attorneyContactEmail" class="form-label">Your Email *</label>
+                                <input type="email" class="form-control" id="attorneyContactEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="attorneyContactMessage" class="form-label">Message *</label>
+                                <textarea class="form-control" id="attorneyContactMessage" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-envelope me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Case Request Modal -->
+<div class="modal fade" id="caseRequestModal" tabindex="-1" aria-labelledby="caseRequestModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="caseRequestModalLabel">
+                    <i class="fas fa-file-contract text-gold me-2"></i>
+                    Request Legal Assistance
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="caseRequestForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="caseName" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="caseName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="caseEmail" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="caseEmail" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="casePhone" class="form-label">Phone *</label>
+                            <input type="tel" class="form-control" id="casePhone" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="caseType" class="form-label">Case Type *</label>
+                            <select class="form-control" id="caseType" required>
+                                <option value="">Select Case Type</option>
+                                <option value="corporate">Corporate/Business</option>
+                                <option value="family">Family/Matrimonial</option>
+                                <option value="criminal">Criminal</option>
+                                <option value="property">Property/Real Estate</option>
+                                <option value="tax">Tax/Financial</option>
+                                <option value="employment">Employment</option>
+                                <option value="civil">Civil Litigation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="caseDescription" class="form-label">Case Description *</label>
+                            <textarea class="form-control" id="caseDescription" rows="5" 
+                                      placeholder="Please provide detailed information about your case..." required></textarea>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="caseUrgency" class="form-label">Urgency Level *</label>
+                            <select class="form-control" id="caseUrgency" required>
+                                <option value="">Select Urgency</option>
+                                <option value="high">High - Need immediate assistance</option>
+                                <option value="medium">Medium - Within a week</option>
+                                <option value="low">Low - General inquiry</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="caseDocuments" class="form-label">Upload Documents (Optional)</label>
+                            <input type="file" class="form-control" id="caseDocuments" multiple>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        All information provided will be kept strictly confidential and protected under attorney-client privilege.
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Case Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" 
+                        data-bs-dismiss="modal" aria-label="Close" style="z-index: 1;"></button>
+                <div class="ratio ratio-16x9">
+                    <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Search for services, attorneys, articles..." 
+                           id="searchInput">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="mt-3">
+                    <h6 class="text-muted">Popular Searches:</h6>
+                    <div class="d-flex flex-wrap gap-2 mt-2">
+                        <span class="badge bg-light text-dark">Corporate Law</span>
+                        <span class="badge bg-light text-dark">Family Law</span>
+                        <span class="badge bg-light text-dark">Property Disputes</span>
+                        <span class="badge bg-light text-dark">Tax Planning</span>
+                        <span class="badge bg-light text-dark">Criminal Defense</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Review/Testimonial Modal -->
+<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewModalLabel">
+                    <i class="fas fa-star text-gold me-2"></i>
+                    Write a Review
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="reviewForm">
+                    <div class="mb-3">
+                        <label class="form-label">Your Rating *</label>
+                        <div class="star-rating" style="font-size: 2rem; color: var(--primary-gold); cursor: pointer;">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <input type="hidden" name="rating" value="0">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewName" class="form-label">Your Name *</label>
+                        <input type="text" class="form-control" id="reviewName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewTitle" class="form-label">Review Title *</label>
+                        <input type="text" class="form-control" id="reviewTitle" 
+                               placeholder="Summarize your experience" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reviewMessage" class="form-label">Your Review *</label>
+                        <textarea class="form-control" id="reviewMessage" rows="4" 
+                                  placeholder="Share your experience with us..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.star-rating i {
+    transition: all 0.2s ease;
+}
+
+.star-rating i.active,
+.star-rating i.hover {
+    color: var(--primary-gold) !important;
+}
+
+.star-rating i.far {
+    color: #ddd;
+}
+
+.star-rating i.active {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+</style>
+
+<script>
+// Star rating functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const starContainers = document.querySelectorAll('.star-rating');
+    
+    starContainers.forEach(container => {
+        const stars = container.querySelectorAll('i');
+        const input = container.querySelector('input[type="hidden"]');
+        
+        stars.forEach((star, index) => {
+            star.addEventListener('click', function() {
+                stars.forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.remove('far');
+                        s.classList.add('fas', 'active');
+                    } else {
+                        s.classList.remove('fas', 'active');
+                        s.classList.add('far');
+                    }
+                });
+                
+                if (input) {
+                    input.value = index + 1;
+                }
+            });
+        });
+    });
+});
+</script>
+

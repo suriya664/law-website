@@ -1,0 +1,435 @@
+/*
+====================================================================
+LawFIRM - Responsive CSS
+Version: 1.0.0
+====================================================================
+*/
+
+/* ===== Large Devices (Desktops, less than 1200px) ===== */
+@media (max-width: 1199.98px) {
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 1.75rem; }
+  
+  .hero h1 { font-size: 3rem; }
+  
+  .section-title h2 { font-size: 2.25rem; }
+}
+
+/* ===== Medium Devices (Tablets, less than 992px) ===== */
+@media (max-width: 991.98px) {
+  :root {
+    --section-padding: 60px;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  
+  .hero {
+    min-height: 500px;
+    background-attachment: scroll;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  /* Navigation */
+  .navbar-collapse {
+    background-color: var(--white);
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+  
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+  
+  /* Stats */
+  .stats-section {
+    background-attachment: scroll;
+  }
+  
+  .stat-card {
+    margin-bottom: 30px;
+  }
+  
+  /* Attorney Cards */
+  .attorney-card {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Pricing */
+  .pricing-card.featured {
+    transform: scale(1);
+    margin-bottom: 30px;
+  }
+  
+  /* Footer */
+  .footer-widget {
+    margin-bottom: 40px;
+  }
+}
+
+/* ===== Small Devices (Landscape phones, less than 768px) ===== */
+@media (max-width: 767.98px) {
+  :root {
+    --section-padding: 50px;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.35rem; }
+  h4 { font-size: 1.2rem; }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: 450px;
+    padding: 40px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .hero .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero .btn {
+    width: 100%;
+  }
+  
+  /* Section Title */
+  .section-title h2 {
+    font-size: 1.75rem;
+  }
+  
+  .section-title p {
+    font-size: 1rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 25px;
+  }
+  
+  .btn-lg {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+  
+  /* Topbar */
+  .topbar {
+    text-align: center;
+  }
+  
+  .topbar a {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb-section {
+    padding: 60px 0;
+  }
+  
+  .breadcrumb-section h1 {
+    font-size: 1.75rem;
+  }
+  
+  /* Practice Areas */
+  .practice-area-card {
+    margin-bottom: 20px;
+  }
+  
+  /* Case Studies */
+  .case-study-card {
+    height: 300px;
+  }
+  
+  .case-study-overlay {
+    transform: translateY(0);
+    padding: 20px;
+  }
+  
+  /* Testimonials */
+  .testimonial-card {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  
+  /* Blog */
+  .blog-image {
+    height: 200px;
+  }
+  
+  .blog-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Contact Info */
+  .contact-info-box {
+    margin-bottom: 20px;
+  }
+  
+  /* Forms */
+  .form-control {
+    padding: 10px 15px;
+  }
+  
+  /* Dashboard */
+  .dashboard-sidebar {
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-stat {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .dashboard-stat-info h3 {
+    font-size: 1.75rem;
+  }
+  
+  /* Pricing */
+  .pricing-price {
+    font-size: 2.5rem;
+  }
+  
+  /* Stats */
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+  }
+  
+  /* Attorney Image */
+  .attorney-image {
+    height: 300px;
+  }
+  
+  .attorney-social {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Extra Small Devices (Portrait phones, less than 576px) ===== */
+@media (max-width: 575.98px) {
+  :root {
+    --section-padding: 40px;
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.1rem; }
+  
+  /* Hero */
+  .hero {
+    min-height: 400px;
+  }
+  
+  .hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Section Title */
+  .section-title {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+  
+  .section-title h2::after {
+    width: 60px;
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb-section {
+    padding: 40px 0;
+  }
+  
+  .breadcrumb-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  /* Practice Area Icon */
+  .practice-area-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.75rem;
+  }
+  
+  /* Case Studies */
+  .case-study-card {
+    height: 250px;
+  }
+  
+  .case-study-overlay {
+    padding: 15px;
+  }
+  
+  /* Testimonials */
+  .testimonial-quote {
+    font-size: 3rem;
+  }
+  
+  .testimonial-author {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Blog */
+  .blog-content {
+    padding: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    padding-top: 40px;
+  }
+  
+  .footer-widget h5 {
+    font-size: 1.1rem;
+  }
+  
+  /* Dashboard */
+  .dashboard-card {
+    padding: 20px;
+  }
+  
+  .dashboard-stat-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.75rem;
+  }
+  
+  /* Pricing */
+  .pricing-card {
+    padding: 30px 20px;
+  }
+  
+  .pricing-price {
+    font-size: 2rem;
+  }
+  
+  .pricing-badge {
+    font-size: 0.75rem;
+    padding: 4px 35px;
+  }
+  
+  /* Stats */
+  .stat-card i {
+    font-size: 2.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  /* Attorney */
+  .attorney-info {
+    padding: 20px;
+  }
+  
+  .attorney-specialization {
+    font-size: 0.8rem;
+  }
+  
+  /* Social Links */
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+  .navbar,
+  .topbar,
+  footer,
+  .btn,
+  .social-links {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ===== Landscape Orientation ===== */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+  
+  .breadcrumb-section {
+    padding: 40px 0;
+  }
+}
+

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LawFIRM - Get in touch with India's leading law firm for legal consultation.">
+    <title>Contact Us - LawFIRM</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/dark.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    <style>
+        /* Contact Info Box Alignment */
+        .contact-info-box {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+        
+        .contact-info-box i {
+            font-size: 2.5rem;
+            color: #c9a961;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info-box h5 {
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .contact-info-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .contact-info-box a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info-box a:hover {
+            color: #c9a961;
+        }
+        
+        /* Practice Area Cards Alignment */
+        .practice-area-card {
+            padding: 2rem;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .practice-area-card:hover {
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+        
+        .practice-area-card h5 {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 1.25rem;
+        }
+        
+        /* Office Info Section */
+        .office-info {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 1.5rem;
+        }
+        
+        .office-info p {
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        
+        .office-info p i {
+            width: 24px;
+            flex-shrink: 0;
+        }
+        
+        .office-info a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .office-info a:hover {
+            color: #c9a961;
+        }
+        
+        .text-gold {
+            color: #c9a961 !important;
+        }
+        
+        /* Form Alignment */
+        .form-label {
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control {
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: #c9a961;
+            box-shadow: 0 0 0 0.2rem rgba(201, 169, 97, 0.15);
+        }
+        
+        /* Button Alignment */
+        .btn-primary {
+            background-color: #c9a961;
+            border-color: #c9a961;
+            padding: 0.875rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #b39651;
+            border-color: #b39651;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+        }
+        
+        /* Section Padding */
+        .py-5 {
+            padding-top: 4rem !important;
+            padding-bottom: 4rem !important;
+        }
+        
+        /* Breadcrumb Section */
+        .breadcrumb-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 4rem 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .breadcrumb-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            justify-content: center;
+            margin-bottom: 0;
+            padding: 0;
+        }
+        
+        .breadcrumb-item a {
+            color: #c9a961;
+            text-decoration: none;
+        }
+        
+        .breadcrumb-item.active {
+            color: #fff;
+        }
+        
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: rgba(255,255,255,0.6);
+        }
+        
+        /* Ensure equal height for cards in rows */
+        .row.g-4 {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 1.5rem;
+        }
+        
+        /* Map Container Inside Card */
+        .map-container-inner {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .map-container-inner iframe {
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+        }
+        
+        /* Contact Form & Map Section */
+        .bg-light {
+            padding-bottom: 5rem !important;
+            overflow: hidden;
+        }
+        
+        /* Ensure no overflow */
+        .container {
+            overflow: visible;
+        }
+        
+        .row {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <h1 data-aos="fade-up">Contact Us</h1>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-box h-100">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <h5>Head Office</h5>
+                        <p class="mb-0">123, MG Road, Connaught Place<br>New Delhi - 110001, India</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-box h-100">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <h5>Phone Numbers</h5>
+                        <p class="mb-0">
+                            <a href="tel:+911234567890">+91 123 456 7890</a><br>
+                            <a href="tel:+919876543210">+91 987 654 3210</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info-box h-100">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <h5>Email Address</h5>
+                        <p class="mb-0">
+                            <a href="mailto:info@lawfirm.in">info@lawfirm.in</a><br>
+                            <a href="mailto:support@lawfirm.in">support@lawfirm.in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="mb-4">Send Us a Message</h2>
+                    <p class="mb-4">Fill out the form below and our team will get back to you within 24 hours.</p>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="fullName" name="name" placeholder="Enter your name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+91 1234567890" pattern="[+]?[0-9]{10,15}" required>
+                                <div class="invalid-feedback">Please enter a valid phone number.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Message subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Send Message
+                                </button>
+                            </div>
+                            <div class="col-12">
+                                <div id="formMessage" class="alert d-none" role="alert"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="mb-4">Our Office Location</h2>
+                    <p class="mb-4">Visit us at our head office in New Delhi</p>
+                    <div class="practice-area-card">
+                        <div class="office-info mb-4">
+                            <h5 class="mb-3"><i class="fas fa-map-marker-alt text-gold me-2" aria-hidden="true"></i>Head Office</h5>
+                            <p class="mb-2 text-muted"><i class="fas fa-building text-gold me-2"></i>123, MG Road, Connaught Place</p>
+                            <p class="mb-2 text-muted"><i class="fas fa-city text-gold me-2"></i>New Delhi - 110001, India</p>
+                            <p class="mb-2 text-muted"><i class="fas fa-phone text-gold me-2"></i><a href="tel:+911234567890">+91 123 456 7890</a></p>
+                            <p class="mb-0 text-muted"><i class="fas fa-envelope text-gold me-2"></i><a href="mailto:info@lawfirm.in">info@lawfirm.in</a></p>
+                        </div>
+                        <div class="map-container-inner">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.968026451573!2d77.21787731508042!3d28.630943182421663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd371d97c0ff%3A0x6b2d06213daf0f43!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="280" style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy" title="LawFIRM Head Office Location"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spacer to prevent footer overlap -->
+    <div style="clear: both; height: 2rem;"></div>
+
+    <div id="footer-placeholder"></div>
+    <div id="modals-placeholder"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/ajax.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script>
+        // Load partials
+        fetch('../partials/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data)
+            .catch(error => console.error('Error loading header:', error));
+        
+        fetch('../partials/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+            .catch(error => console.error('Error loading footer:', error));
+        
+        fetch('../partials/modals.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('modals-placeholder').innerHTML = data)
+            .catch(error => console.error('Error loading modals:', error));
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Form validation and submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    if (contactForm.checkValidity()) {
+                        const formData = new FormData(contactForm);
+                        const data = Object.fromEntries(formData);
+
+                        formMessage.className = 'alert alert-success';
+                        formMessage.textContent = 'Thank you for contacting us! We will get back to you within 24 hours.';
+                        formMessage.classList.remove('d-none');
+
+                        contactForm.reset();
+                        contactForm.classList.remove('was-validated');
+
+                        setTimeout(function() {
+                            formMessage.classList.add('d-none');
+                        }, 5000);
+
+                        console.log('Form data:', data);
+                    } else {
+                        formMessage.className = 'alert alert-danger';
+                        formMessage.textContent = 'Please fill in all required fields correctly.';
+                        formMessage.classList.remove('d-none');
+                    }
+
+                    contactForm.classList.add('was-validated');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

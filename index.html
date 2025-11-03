@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LawFIRM - India's leading law firm providing expert legal services across various practice areas. Corporate law, family law, criminal defense, and more.">
+    <meta name="keywords" content="law firm, legal services, attorneys, lawyers, India, corporate law, family law, criminal defense">
+    <meta name="author" content="LawFIRM">
+    
+    <title>LawFIRM - Legal Advisors & Attorneys | India's Leading Law Firm</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/dark.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="tel:+911234567890"><i class="fas fa-phone"></i> +91 123 456 7890</a>
+                    <a href="mailto:info@lawfirm.in"><i class="fas fa-envelope"></i> info@lawfirm.in</a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-balance-scale text-gold me-2"></i>
+                Law<span>FIRM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="practice-areas.html">Practice Areas</a></li>
+                            <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+                            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="attorneysDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Attorneys
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="attorneysDropdown">
+                            <li><a class="dropdown-item" href="attorneys.html">Our Attorneys</a></li>
+                            <li><a class="dropdown-item" href="attorney-details.html">Attorney Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="clients.html">Our Clients</a></li>
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+                            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                            <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                    <i class="fas fa-calendar-check me-2"></i>Book Consultation
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Defending Your Rights. Protecting Your Future.</h1>
+                <p>India's leading law firm with over 20 years of experience in providing expert legal solutions across all practice areas.</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                        <i class="fas fa-calendar-check me-2"></i>Request Free Consultation
+                    </a>
+                    <a href="about.html" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-info-circle me-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>20+ Years Experience</h4>
+                        <p>Over two decades of successful legal practice in India, serving thousands of satisfied clients.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Expert Attorneys</h4>
+                        <p>Team of highly qualified lawyers specialized in various fields of Indian law and jurisprudence.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>98% Success Rate</h4>
+                        <p>Proven track record of winning cases and delivering favorable outcomes for our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800" alt="Law Firm Office" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content-wrapper d-flex flex-column h-100 justify-content-center">
+                        <div class="about-content">
+                            <h2 class="text-center">India's Most Trusted Law Firm</h2>
+                            <p class="lead text-center">Committed to Excellence in Legal Services Since 2003</p>
+                            <p class="text-center">
+                        LawFIRM is one of India's premier full-service law firms, headquartered in New Delhi with offices 
+                        across major cities including Mumbai, Bangalore, Chennai, and Kolkata. We provide comprehensive 
+                        legal solutions to individuals, businesses, and organizations throughout the country.
+                    </p>
+                            <p class="text-center">
+                        Our team of distinguished attorneys brings together decades of experience in Indian law, 
+                        constitutional matters, corporate regulations, and international legal frameworks. We pride 
+                        ourselves on delivering personalized, result-oriented legal services tailored to each client's 
+                        unique needs.
+                    </p>
+                            <div class="row mt-4 justify-content-center">
+                                <div class="col-6 text-center">
+                                    <div class="d-flex align-items-center mb-3 justify-content-center">
+                                <i class="fas fa-check-circle text-gold fs-4 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">5000+</h5>
+                                    <p class="mb-0 text-muted">Cases Won</p>
+                                </div>
+                            </div>
+                        </div>
+                                <div class="col-6 text-center">
+                                    <div class="d-flex align-items-center mb-3 justify-content-center">
+                                <i class="fas fa-check-circle text-gold fs-4 me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">50+</h5>
+                                    <p class="mb-0 text-muted">Expert Lawyers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="text-center mt-4">
+                        <a href="about.html" style="color: #c9a142; text-decoration: none; font-weight: 600;">
+                            <i class="fas fa-arrow-right me-2"></i>More About Us
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section>
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Practice Areas</h2>
+                <p>Comprehensive Legal Solutions Across All Major Practice Areas in India</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4 class="text-center">Corporate Law</h4>
+                        <p class="text-center">Complete corporate legal services including company formation, M&A, compliance, and corporate governance under Indian Companies Act.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="text-center">Family Law</h4>
+                        <p class="text-center">Expert guidance on divorce, child custody, alimony, property division, and matrimonial disputes under various personal laws of India.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4 class="text-center">Criminal Defense</h4>
+                        <p class="text-center">Experienced criminal defense attorneys representing clients in all types of criminal cases under IPC, CrPC, and special laws.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4 class="text-center">Property Law</h4>
+                        <p class="text-center">Real estate transactions, property disputes, title verification, RERA compliance, and land acquisition matters.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h4 class="text-center">Tax Law</h4>
+                        <p class="text-center">Income tax, GST, customs duty, and international taxation matters. Expert representation before tax authorities and tribunals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="practice-area-card">
+                        <div class="practice-area-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4 class="text-center">Employment Law</h4>
+                        <p class="text-center">Labor law compliance, industrial disputes, wrongful termination, workplace harassment, and employee benefits under Indian labor laws.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="case-studies.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-file-alt me-2"></i>View All Case Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Cases Won</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <i class="fas fa-user-tie"></i>
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Expert Attorneys</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">Success Rate %</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attorneys Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Meet Our Attorneys</h2>
+                <p>Experienced Legal Professionals Committed to Your Success</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="attorney-card">
+                        <div class="attorney-image">
+                            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400" alt="Advocate Rajesh Kumar">
+                            <div class="attorney-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:rajesh@lawfirm.in"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="attorney-info">
+                            <h4 class="text-center">Adv. Rajesh Kumar</h4>
+                            <p class="position text-center">Senior Partner</p>
+                            <p class="text-center">Specializing in Corporate Law & M&A with 25 years of experience.</p>
+                            <div class="attorney-specialization justify-content-center">
+                                <span>Corporate Law</span>
+                                <span>M&A</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="attorney-card">
+                        <div class="attorney-image">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400" alt="Advocate Priya Sharma">
+                            <div class="attorney-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:priya@lawfirm.in"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="attorney-info">
+                            <h4 class="text-center">Adv. Priya Sharma</h4>
+                            <p class="position text-center">Managing Partner</p>
+                            <p class="text-center">Expert in Family Law and Matrimonial Disputes with 18 years experience.</p>
+                            <div class="attorney-specialization justify-content-center">
+                                <span>Family Law</span>
+                                <span>Divorce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="attorney-card">
+                        <div class="attorney-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Advocate Vikram Singh">
+                            <div class="attorney-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:vikram@lawfirm.in"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="attorney-info">
+                            <h4 class="text-center">Adv. Vikram Singh</h4>
+                            <p class="position text-center">Senior Advocate</p>
+                            <p class="text-center">Criminal Defense specialist with Supreme Court practice for 20 years.</p>
+                            <div class="attorney-specialization justify-content-center">
+                                <span>Criminal Law</span>
+                                <span>Defense</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="attorney-card">
+                        <div class="attorney-image">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400" alt="Advocate Anjali Mehta">
+                            <div class="attorney-social">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:anjali@lawfirm.in"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="attorney-info">
+                            <h4 class="text-center">Adv. Anjali Mehta</h4>
+                            <p class="position text-center">Partner</p>
+                            <p class="text-center">Property Law and Real Estate expert with extensive RERA knowledge.</p>
+                            <div class="attorney-specialization justify-content-center">
+                                <span>Property Law</span>
+                                <span>Real Estate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="attorneys.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-users me-2"></i>View All Attorneys
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>What Our Clients Say</h2>
+                <p>Success Stories from Satisfied Clients Across India</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card" data-aos="fade-up">
+                                    <div class="testimonial-quote">"</div>
+                                    <p class="testimonial-text text-center">
+                                        LawFIRM helped us navigate a complex corporate merger with exceptional expertise. 
+                                        Their attention to detail and deep understanding of Indian corporate law was invaluable. 
+                                        I highly recommend their services to any business in India.
+                                    </p>
+                                    <div class="testimonial-author justify-content-center">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Amit Patel">
+                                        <div class="testimonial-author-info text-center">
+                                            <h5>Amit Patel</h5>
+                                            <p>CEO, TechCorp India Pvt Ltd</p>
+                                            <div class="rating justify-content-center">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <p class="testimonial-text text-center">
+                                        During my difficult divorce case, Adv. Priya Sharma provided compassionate yet 
+                                        strong legal representation. She understood the nuances of Indian family law and 
+                                        fought for my rights. I'm grateful for her support.
+                                    </p>
+                                    <div class="testimonial-author justify-content-center">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Neha Gupta">
+                                        <div class="testimonial-author-info text-center">
+                                            <h5>Neha Gupta</h5>
+                                            <p>Entrepreneur, Mumbai</p>
+                                            <div class="rating justify-content-center">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <p class="testimonial-text text-center">
+                                        When I was wrongly accused, Adv. Vikram Singh's expertise in criminal law saved my 
+                                        reputation and career. His strategic approach and courtroom skills are outstanding. 
+                                        Best criminal lawyer in Delhi!
+                                    </p>
+                                    <div class="testimonial-author justify-content-center">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="Rahul Verma">
+                                        <div class="testimonial-author-info text-center">
+                                            <h5>Rahul Verma</h5>
+                                            <p>Business Owner, New Delhi</p>
+                                            <div class="rating justify-content-center">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-navy">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="text-white">Need Legal Assistance? We're Here to Help!</h2>
+                    <p class="text-white-50 mb-lg-0">
+                        Schedule a free consultation with our expert attorneys today. Available 24/7 for urgent legal matters.
+                    </p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="tel:+911234567890" class="btn btn-primary btn-lg me-2 mb-2">
+                        <i class="fas fa-phone me-2"></i>Call Now
+                    </a>
+                    <a href="#" class="btn btn-outline-primary btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                        <i class="fas fa-calendar me-2"></i>Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h5><i class="fas fa-balance-scale text-gold me-2"></i>LawFIRM</h5>
+                        <p>India's leading law firm providing expert legal services across various practice areas. With over 20 years of experience, we are committed to defending your rights and protecting your future.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn" class="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Facebook" class="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter" class="social-twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram" class="social-instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube" class="social-youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget text-center text-md-start">
+                        <h5 class="text-center text-md-start">Quick Links</h5>
+                        <ul class="text-center text-md-start">
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="attorneys.html"><i class="fas fa-chevron-right"></i> Our Attorneys</a></li>
+                            <li><a href="practice-areas.html"><i class="fas fa-chevron-right"></i> Practice Areas</a></li>
+                            <li><a href="case-studies.html"><i class="fas fa-chevron-right"></i> Case Studies</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Practice Areas</h5>
+                        <ul>
+                            <li><a href="practice-areas.html#corporate"><i class="fas fa-balance-scale"></i> Corporate Law</a></li>
+                            <li><a href="practice-areas.html#family"><i class="fas fa-balance-scale"></i> Family Law</a></li>
+                            <li><a href="practice-areas.html#criminal"><i class="fas fa-balance-scale"></i> Criminal Defense</a></li>
+                            <li><a href="practice-areas.html#property"><i class="fas fa-balance-scale"></i> Property Law</a></li>
+                            <li><a href="practice-areas.html#tax"><i class="fas fa-balance-scale"></i> Tax Law</a></li>
+                            <li><a href="practice-areas.html#employment"><i class="fas fa-balance-scale"></i> Employment Law</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Contact Info</h5>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 123, MG Road<br>Connaught Place<br>New Delhi - 110001, India</li>
+                            <li><i class="fas fa-phone"></i> +91 123 456 7890<br>+91 987 654 3210</li>
+                            <li><i class="fas fa-envelope"></i> info@lawfirm.in<br>support@lawfirm.in</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 2:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-widget">
+                        <h5>Subscribe to Our Newsletter</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-widget">
+                        <p>Stay updated with our latest news and legal insights</p>
+                        <form id="newsletterForm" class="d-flex gap-2 mt-3">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><p>&copy; 2025 LawFIRM. All Rights Reserved.</p></div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="privacy-policy.html">Privacy Policy</a> | 
+                        <a href="privacy-policy.html#terms">Terms of Service</a> | 
+                        <a href="privacy-policy.html#disclaimer">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Consultation Booking Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultationModalLabel">
+                        <i class="fas fa-calendar-check text-gold me-2"></i>Book a Free Consultation
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="consultationForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="consultName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="consultName" name="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="consultEmail" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="consultEmail" name="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="consultPhone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="consultPhone" name="phone" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="consultDate" class="form-label">Preferred Date *</label>
+                                <input type="date" class="form-control" id="consultDate" name="date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="consultTime" class="form-label">Preferred Time *</label>
+                                <input type="time" class="form-control" id="consultTime" name="time" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="consultArea" class="form-label">Practice Area *</label>
+                                <select class="form-control" id="consultArea" name="practice_area" required>
+                                    <option value="">Select Practice Area</option>
+                                    <option value="corporate">Corporate Law</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="criminal">Criminal Defense</option>
+                                    <option value="property">Property Law</option>
+                                    <option value="tax">Tax Law</option>
+                                    <option value="employment">Employment Law</option>
+                                    <option value="intellectual">Intellectual Property</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="consultMessage" class="form-label">Brief Description</label>
+                                <textarea class="form-control" id="consultMessage" name="message" rows="4" placeholder="Describe your legal issue..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100"><i class="fas fa-paper-plane me-2"></i>Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/ajax.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize booking form
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookingForm = document.getElementById('consultationForm');
+            if (bookingForm) {
+                bookingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = {
+                        name: document.getElementById('consultName').value,
+                        email: document.getElementById('consultEmail').value,
+                        phone: document.getElementById('consultPhone').value,
+                        date: document.getElementById('consultDate').value,
+                        time: document.getElementById('consultTime').value,
+                        practice_area: document.getElementById('consultArea').value,
+                        message: document.getElementById('consultMessage').value
+                    };
+                    
+                    alert('Thank you! Your consultation request has been submitted. We will contact you within 24 hours.');
+                    
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('consultationModal'));
+                    if (modal) {
+                        modal.hide();
+                    }
+                    
+                    bookingForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

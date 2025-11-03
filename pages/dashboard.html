@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LawFIRM</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/dark.css">
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-4">Client Dashboard</h2>
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="dashboard-sidebar">
+                        <h5 class="mb-3">Menu</h5>
+                        <ul class="dashboard-nav">
+                            <li><a href="#" class="active"><i class="fas fa-dashboard"></i>Dashboard</a></li>
+                            <li><a href="#"><i class="fas fa-briefcase"></i>My Cases</a></li>
+                            <li><a href="#"><i class="fas fa-calendar"></i>Appointments</a></li>
+                            <li><a href="#"><i class="fas fa-file"></i>Documents</a></li>
+                            <li><a href="#"><i class="fas fa-credit-card"></i>Payments</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+                            <li><a href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4">
+                            <div class="dashboard-card">
+                                <div class="dashboard-stat">
+                                    <div class="dashboard-stat-info">
+                                        <h3>3</h3>
+                                        <p>Active Cases</p>
+                                    </div>
+                                    <div class="dashboard-stat-icon"><i class="fas fa-briefcase"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dashboard-card">
+                                <div class="dashboard-stat">
+                                    <div class="dashboard-stat-info">
+                                        <h3>2</h3>
+                                        <p>Upcoming Meetings</p>
+                                    </div>
+                                    <div class="dashboard-stat-icon"><i class="fas fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="dashboard-card">
+                                <div class="dashboard-stat">
+                                    <div class="dashboard-stat-info">
+                                        <h3>5</h3>
+                                        <p>Documents</p>
+                                    </div>
+                                    <div class="dashboard-stat-icon"><i class="fas fa-file"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h4>Recent Activities</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Activity</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Oct 15, 2024</td>
+                                    <td>Case Update - Property Dispute</td>
+                                    <td><span class="badge bg-success">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Oct 14, 2024</td>
+                                    <td>Consultation Meeting</td>
+                                    <td><span class="badge bg-success">Completed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Oct 12, 2024</td>
+                                    <td>Document Upload</td>
+                                    <td><span class="badge bg-info">In Progress</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/ajax.js"></script>
+    <script>
+        fetch('../partials/header.html').then(r => r.text()).then(d => document.getElementById('header-placeholder').innerHTML = d);
+        fetch('../partials/footer.html').then(r => r.text()).then(d => document.getElementById('footer-placeholder').innerHTML = d);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,310 @@
+/*
+====================================================================
+LawFIRM - Dark Mode CSS
+Version: 1.0.0
+====================================================================
+*/
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --primary-navy: #1a2332;
+  --primary-gold: #d4af37;
+  --secondary-gold: #e5c158;
+  --light-gray: #1e2836;
+  --medium-gray: #9ca3af;
+  --dark-gray: #f3f4f6;
+  --white: #0f1419;
+  --text-dark: #f3f4f6;
+  --text-light: #9ca3af;
+  --bg-dark: #0f1419;
+  --bg-darker: #0a0e13;
+}
+
+/* Global Styles */
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Typography */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--dark-gray);
+}
+
+body.dark-mode p {
+  color: var(--text-light);
+}
+
+/* Navigation */
+body.dark-mode .navbar {
+  background-color: var(--bg-darker);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .navbar-brand {
+  color: var(--dark-gray) !important;
+}
+
+body.dark-mode .navbar-nav .nav-link {
+  color: var(--text-light);
+}
+
+body.dark-mode .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-nav .nav-link.active {
+  color: var(--primary-gold);
+}
+
+body.dark-mode .navbar-toggler {
+  border-color: var(--text-light);
+}
+
+body.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Topbar */
+body.dark-mode .topbar {
+  background-color: var(--bg-darker);
+}
+
+/* Sections */
+body.dark-mode .bg-light {
+  background-color: var(--light-gray);
+}
+
+body.dark-mode section {
+  background-color: var(--bg-dark);
+}
+
+/* Cards */
+body.dark-mode .attorney-card,
+body.dark-mode .practice-area-card,
+body.dark-mode .case-study-card,
+body.dark-mode .blog-card,
+body.dark-mode .pricing-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .dashboard-card,
+body.dark-mode .contact-info-box {
+  background-color: var(--light-gray);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .attorney-info h4,
+body.dark-mode .practice-area-card h4,
+body.dark-mode .blog-content h4,
+body.dark-mode .contact-info-box h5 {
+  color: var(--dark-gray);
+}
+
+body.dark-mode .attorney-specialization span {
+  background-color: var(--bg-darker);
+  color: var(--text-light);
+}
+
+/* Practice Areas */
+body.dark-mode .practice-area-card:hover {
+  border-color: var(--primary-gold);
+}
+
+/* Testimonials */
+body.dark-mode .testimonial-author-info h5 {
+  color: var(--dark-gray);
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: var(--bg-darker);
+}
+
+body.dark-mode .footer-widget h5,
+body.dark-mode .footer-widget p {
+  color: var(--text-light);
+}
+
+body.dark-mode .footer-widget ul li a {
+  color: var(--text-light);
+}
+
+body.dark-mode .footer-bottom {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Forms */
+body.dark-mode .form-control {
+  background-color: var(--light-gray);
+  border-color: var(--medium-gray);
+  color: var(--dark-gray);
+}
+
+body.dark-mode .form-control:focus {
+  background-color: var(--light-gray);
+  border-color: var(--primary-gold);
+  color: var(--dark-gray);
+}
+
+body.dark-mode .form-label {
+  color: var(--dark-gray);
+}
+
+body.dark-mode .form-control::placeholder {
+  color: var(--medium-gray);
+}
+
+/* Breadcrumb */
+body.dark-mode .breadcrumb-section {
+  background: linear-gradient(135deg, rgba(15, 20, 25, 0.95), rgba(15, 20, 25, 0.85)),
+              url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=1920');
+}
+
+/* Pricing */
+body.dark-mode .pricing-card.featured {
+  border-color: var(--primary-gold);
+}
+
+body.dark-mode .pricing-header h4 {
+  color: var(--dark-gray);
+}
+
+body.dark-mode .pricing-features li {
+  border-bottom-color: var(--bg-darker);
+}
+
+/* Blog */
+body.dark-mode .blog-content h4 a {
+  color: var(--dark-gray);
+}
+
+body.dark-mode .blog-meta {
+  color: var(--text-light);
+}
+
+/* Dashboard */
+body.dark-mode .dashboard-sidebar {
+  background-color: var(--light-gray);
+}
+
+body.dark-mode .dashboard-nav a {
+  color: var(--text-light);
+}
+
+body.dark-mode .dashboard-nav a:hover,
+body.dark-mode .dashboard-nav a.active {
+  background-color: var(--primary-gold);
+  color: var(--white);
+}
+
+body.dark-mode .dashboard-stat-info h3 {
+  color: var(--dark-gray);
+}
+
+/* Tables */
+body.dark-mode .table {
+  color: var(--text-light);
+}
+
+body.dark-mode .table thead th {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  border-color: var(--medium-gray);
+}
+
+body.dark-mode .table tbody td {
+  border-color: var(--medium-gray);
+}
+
+body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Modals */
+body.dark-mode .modal-content {
+  background-color: var(--light-gray);
+  color: var(--text-light);
+}
+
+body.dark-mode .modal-header {
+  border-bottom-color: var(--medium-gray);
+}
+
+body.dark-mode .modal-footer {
+  border-top-color: var(--medium-gray);
+}
+
+body.dark-mode .modal-title {
+  color: var(--dark-gray);
+}
+
+body.dark-mode .btn-close {
+  filter: invert(1);
+}
+
+/* Accordions */
+body.dark-mode .accordion-item {
+  background-color: var(--light-gray);
+  border-color: var(--medium-gray);
+}
+
+body.dark-mode .accordion-button {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+  background-color: var(--bg-darker);
+  color: var(--primary-gold);
+}
+
+body.dark-mode .accordion-body {
+  color: var(--text-light);
+}
+
+/* Alerts */
+body.dark-mode .alert {
+  background-color: var(--light-gray);
+  border-color: var(--medium-gray);
+  color: var(--text-light);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-gold);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-base);
+  z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary-gold);
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: var(--primary-navy);
+}
+
+/* Smooth Transition for Dark Mode */
+body,
+.navbar,
+.card,
+.footer,
+.form-control,
+.modal-content,
+.accordion-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+

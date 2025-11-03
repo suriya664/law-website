@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c9a142"/>
+      <stop offset="1" stop-color="#d4af37"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#0a1c2e"/>
+  <g fill="url(#g)">
+    <path d="M32 10c1.1 0 2 .9 2 2v6h6a2 2 0 0 1 0 4h-6v6a2 2 0 0 1-4 0v-6h-6a2 2 0 0 1 0-4h6v-6c0-1.1.9-2 2-2z"/>
+    <path d="M14 42c0-6.6 8.1-10 18-10s18 3.4 18 10c0 6.2-7.3 10-18 10S14 48.2 14 42zm4 0c0 4.1 6.4 6 14 6s14-1.9 14-6-6.4-6-14-6-14 1.9-14 6z"/>
+  </g>
+  <text x="32" y="58" text-anchor="middle" font-family="Playfair Display, serif" font-size="10" fill="#c9a142">LawFIRM</text>
+</svg>
+
